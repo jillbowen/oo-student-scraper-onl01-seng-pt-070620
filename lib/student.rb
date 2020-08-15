@@ -6,8 +6,8 @@ class Student
 
   def initialize(student_hash)
     self.send("name=", student_hash[:name])
-    self.send("")
-    
+    self.send("location=", student_hash[:location])
+    self.send("profile_url=", student_hash[:profile_url])
     @@all << self
   end
 
