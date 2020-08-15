@@ -19,6 +19,7 @@ class Student
 
   def add_student_attributes(attributes_hash)
     attributes_hash.each do |attribute|
+      self.send("twitter=", )
   end
 
   def self.all
